@@ -1,0 +1,112 @@
+.speaker-list {
+  padding: 16px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.speaker-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 12px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.speaker-item.selected {
+  border: 1px solid #4cbb3e;
+}
+
+.speaker-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.speaker-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.speaker-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc; /* Placeholder for avatar image */
+}
+
+.speaker-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #373f66;
+  font-family: "Plus Jakarta Sans";
+}
+
+.speaker-checkbox {
+  margin-left: auto;
+  cursor: pointer;
+  transform: scale(1.2); /* Enlarge the checkbox slightly */
+}
+input[type="checkbox"] {
+  accent-color: #4cbb3e;
+}
+
+.speaker-details {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #717693;
+  font-family: "Plus Jakarta Sans";
+}
+
+.edit-speaker {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.edit-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  color: #e4875d;
+}
+
+.edit-link {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: bold;
+  color: #e4875d;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .speaker-item {
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .speaker-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .speaker-checkbox {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .speaker-details {
+    margin-top: 8px;
+  }
+}
